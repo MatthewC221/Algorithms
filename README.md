@@ -12,4 +12,4 @@ Efficiency tests
 - bin_search.py
 - prime.py
 
-Notable ones: fib.c, chess_board.c, permutations
+Notable ones: fib.c, chess_board.c, permutations (normal and better), sum_3.py
