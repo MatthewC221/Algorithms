@@ -2,7 +2,8 @@
 
 import sys
 
-# Dynamic programming solution to unique paths
+# Dynamic programming solution to unique paths, much faster than recursion + capable
+# of larger inputs
 
 def uniq_paths(size):
     
@@ -18,6 +19,7 @@ def uniq_paths(size):
         for j in range(1, size):
             arr[i][j] = arr[i - 1][j] + arr[i][j - 1]
     
+    # O(n)
     print ("The number of unique paths is = " + str(arr[size - 1][size - 1]))
 
 if (len(sys.argv) != 2):
