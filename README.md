@@ -8,9 +8,11 @@ Dynamic programming (very basic) / Recursion
 - subset.py
 - super_digit.py
 - unique_paths.py (similar to chess_board.c!)
+- chess_board.c
 
 Efficiency tests
 - bin_search.py
 - prime.py
+- zero_knowledge.py
 
 Notable ones: fib.c, chess_board.c, permutations (normal and better), sum_3.py, unique_paths.py
