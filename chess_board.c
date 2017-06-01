@@ -5,6 +5,8 @@
 #define SIZE 4
 
 /*
+ * In hindsight, this is actually a DP solution. I never realised.
+ * 
  * From an algorithm midterm, "every square of a n*n chess board is an int, you can only 
  * move downwards or right, everytime you move on a square you add it to your sum, maximise that sum"
  * I thought this was a cool question, I made a copy board that maps it out, basically change
