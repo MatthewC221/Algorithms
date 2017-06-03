@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-// Implementation of Knuth-Morris-Pratt in C. For COMP3121 (Algorithms UNSW)
+// Implementation of Knuth-Morris-Pratt in C. To better understand content in COMP3121 (Algorithms UNSW)
 // Great explanation here: https://www.youtube.com/watch?v=GTJr8OvyEVQ
 
 void main(int argc, char *argv[]) 
@@ -19,7 +19,6 @@ void main(int argc, char *argv[])
         int j = 1;
         
         backtrack[0] = 0;
-        // j will be in front, i trails
         // O(n)
         while (j < strlen(sub_string)) {
             if (sub_string[i] == sub_string[j]) {
@@ -52,7 +51,7 @@ void main(int argc, char *argv[])
                     if (index == strlen(sub_string)) {
                         printf("Found at line %d:%d\n", line_count, i);
                         flag = 1;
-                        index = 0;
+                        index--;
                     }
                 } else {
                     if (index > 0) {
