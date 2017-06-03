@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-# Implementation of Knuth-Morris-Pratt, doesn't require hash implementation, seems much more elegant?
+# This is optimised naive, this is not Knuth-morris-pratt
 
 # First argument is the substring
 
