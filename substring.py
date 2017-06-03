@@ -1,5 +1,6 @@
 #!/usr/bin/python
 
+# This will not work! It has issues, will be changed/deleted soon.
 # This is optimised naive, this is not Knuth-morris-pratt
 
 # First argument is the substring
