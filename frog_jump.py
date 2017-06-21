@@ -3,6 +3,10 @@
 # and doing the biggest jumps first I can solve it. Beats 76.77% (not that bad :))
 # Uses DFS
 
+# Quick update: So I tried to make it more optimised and be in a higher %. I replaced the inserts with .append() and replaced the
+# .pop(0) with .pop() which are both O(1) amortized and it was actually slower?! This is confusing, as insert(0, X) and
+# pop(0) are both O(n).
+
 class Solution(object):
     def canCross(self, stones):
         """
