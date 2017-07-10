@@ -19,10 +19,13 @@ Leetcode
 - bin_tree_tilt.py
 - string_bin_tree.py
 - unique_paths2.py
+- nQueens.py
 
 Famous algorithms: Knuth-Morris-Pratt (KMP.c)
 
-Notable ones: fib.c, chess_board.c, permutations (normal and better), sum_3.py, unique_paths.py + unique_paths2.py
+Notable ones: fib.c, chess_board.c, permutations (normal and better), sum_3.py, unique_paths.py + unique_paths2.py, nQueens.py
+
+Rarely included external libs so this below will be fine.
 
 To compile any of the C programs: gcc -o X X.c
 To execute python scripts: chmod 755 X.py --> ./X.py
