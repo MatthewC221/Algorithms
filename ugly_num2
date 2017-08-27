@@ -1,0 +1,49 @@
+# Leetcode: https://leetcode.com/problems/ugly-number-ii/description/
+# This is probably one of my worst solutions, it's weird because it needs to be in order
+# A DP solution is better, I made this to test if a BFS was as effective. It's not really.
+# The sort down time isn't so bad because the queue is small.
+
+class Solution(object):
+    def nthUglyNumber(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
+        
+        dp = set()
+        dp.add(1)
+        count = 0
+        queue = []
+        queue.append(1)       
+        flag = True
+        
+        while (len(queue) > 0):
+            # print queue
+            queue.sort()
+            tmp = queue.pop(0)
+            num2 = tmp * 2
+            num3 = tmp * 3
+            num5 = tmp * 5
+            
+            if (num2 not in dp):
+                dp.add(num2)
+                if (flag):
+                    queue.append(num2)
+            
+            if (num3 not in dp):
+                dp.add(num3)
+                if (flag):
+                    queue.append(num3)
+                
+            if (num5 not in dp):
+                dp.add(num5)
+                if (flag):
+                    queue.append(num5)
+            
+            count += 1
+            if (flag and count > n):
+                flag = False
+        
+        new = sorted(dp)
+        return new[n - 1]
+        
