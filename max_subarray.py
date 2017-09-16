@@ -1,6 +1,6 @@
 # Leetcode: https://leetcode.com/problems/maximum-subarray/description/
 # Pretty straight forward DP, not as challenging as the multiplication form
-# Not sure how this can be faster, only beats 20%? Does internet speed affect this?
+# The first solution seems like it would be faster, but the second beats 60%, first beats 20%
 
 class Solution(object):
     def maxSubArray(self, nums):
@@ -16,3 +16,11 @@ class Solution(object):
             cur_max = max(cur_max, max_sub[i])
         
         return cur_max
+        
+        """
+        max_sub = nums[:]
+        for i in range(1, len(nums)):
+            max_sub[i] = max(max_sub[i - 1] + nums[i], max_sub[i])
+      
+        return max(max_sub)
+        """
