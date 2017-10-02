@@ -1,6 +1,6 @@
 # Leetcode: https://leetcode.com/problems/rotate-array/description/
 # The hard part of this question is finding the trick, which is to reverse the two portions. Then do a total reverse
-# Also watch out for edge cases with k > len(nums)
+# Also watch out for edge cases with k > len(nums), beats 95%
 
 class Solution(object):
     def rotate(self, nums, k):
