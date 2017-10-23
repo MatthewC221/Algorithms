@@ -3,6 +3,8 @@
 # if not found, such as line 26 return that index. (the higher one).
 # E.g: [1, 5, 7, 9], looking for 6. Low and high will be [5, 7] therefore return index of 7
 
+# Beats 85%
+
 class Solution(object):
     def searchInsert(self, nums, target):
         """
