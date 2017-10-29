@@ -1,6 +1,7 @@
 # Leetcode: https://leetcode.com/problems/word-ladder/description/
 # Beats 0.07% of test cases. I made a pre-defined dict as well. NOT SURE MAN
-# TLE's sometimes, I think you need to construct a graph for this sigh
+# TLE's sometimes, I think you need to construct a graph for this sigh. Not good to do in Python
+# the string to list to string conversions are costly man!!!
 
 from string import ascii_lowercase
 
