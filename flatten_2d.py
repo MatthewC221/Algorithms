@@ -1,6 +1,5 @@
 # Leetcode: https://leetcode.com/problems/flatten-2d-vector/description/
-# Pretty straight forward although there are edge cases of empty lists. I think an iterator is normally not meant to
-# copy the data.
+# Pretty straight forward although there are edge cases of empty lists. Don't copy the data.
 
 class Vector2D(object):
 
@@ -9,9 +8,7 @@ class Vector2D(object):
         Initialize your data structure here.
         :type vec2d: List[List[int]]
         """
-        self.vec = []
-        for cur in vec2d:
-            if (cur): self.vec.append(cur)
+        self.vec = vec2d
         self.cur_ind = 0         # Which vector we are at
         self.lst_ind = 0         # The index at the vector
         
@@ -33,6 +30,10 @@ class Vector2D(object):
         """
         :rtype: bool
         """
+        while (self.cur_ind < len(self.vec)):
+            if self.vec[self.cur_ind]: break
+            self.cur_ind += 1
+        
         return (self.cur_ind < len(self.vec))
 
 # Your Vector2D object will be instantiated and called as such:
