@@ -1,7 +1,7 @@
-# Leetcode: https://leetcode.com/problems/video-stitching/
-# Medium, beats 100%, my slow shift into C++
+// Leetcode: https://leetcode.com/problems/video-stitching/
+// Medium, beats 100%, my slow shift into C++
 
-"""
+/*
 Take a greedy approach, try to extend the ending of the videos as far as you can whilst not missing gaps
 Identify thresholds of when our current ending time is over: The next starting time is greater than our ending time.
 At that point, we are FORCED to extend the tape, we should use the maximum then.
@@ -13,7 +13,7 @@ Steps
 1. At [1, 5] our ending time has passed. We find the maximum tape we can extend BEFORE this step (ending_time=2)
 2. At [4, 6] our ending time (=2) has passed. We find max extension before that (ending_time=9)
 3. At [8, 10] our ending time hasn't expired but it's the last index, so we should take that as long as there is no gap.
-"""
+*/
 
 class Solution {
 public:
